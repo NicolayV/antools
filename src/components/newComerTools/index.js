@@ -1,7 +1,8 @@
 import * as S from "./styled";
 import { ToolCard } from "../toolCard";
-import ronaldIcon from "../../assets/img/ronald-icon.png";
 import { SearchBar } from "../searchBar/";
+import { ImageSlider } from "../imageSlider";
+import { slides } from "../../data";
 
 export const NewcomerTools = ({ list }) => {
   return (
@@ -24,24 +25,7 @@ export const NewcomerTools = ({ list }) => {
         </S.CardBoard>
       </S.Container>
 
-      <S.CarouselBoard>
-        <S.Content>
-          <S.ButtonContainer>
-            <S.ChevronLeft />
-            <S.LiftButton />
-          </S.ButtonContainer>
-          <S.Logo src={ronaldIcon} />
-          <S.ButtonContainer>
-            <S.ChevronRight />
-            <S.LiftButton />
-          </S.ButtonContainer>
-        </S.Content>
-        <S.Carousel>
-          <S.CarouselItem />
-          <S.CarouselItem active={true} />
-          <S.CarouselItem />
-        </S.Carousel>
-      </S.CarouselBoard>
+      <ImageSlider slides={slides} />
 
       <S.InfoBoard>
         <S.Header>

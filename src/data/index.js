@@ -10,6 +10,10 @@ import phpstormIcon from "../assets/img/logos_phpstorm.png";
 import toolboxIcon from "../assets/img/logos_toolbox.png";
 import procreateIcon from "../assets/img/logos_procreate.png";
 
+import img1 from "../assets/img/ronald-icon.png";
+import img2 from "../assets/img/ronald-icon.png";
+import img3 from "../assets/img/ronald-icon.png";
+
 export const popularToolsCard = [
   {
     id: 1,
@@ -97,3 +101,7 @@ export const newcomerToolsCard = [
     isLiked: false,
   },
 ];
+//
+//
+//
+export const slides = [img1, img2, img3];
