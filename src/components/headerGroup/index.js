@@ -34,7 +34,11 @@ export const Header = () => {
             Design and Development tools
           </p>
 
-          <SearchBar />
+          <SearchBar
+            placeholder="find more than 430+ tools..."
+            buttonText="Search"
+            searchLogo={true}
+          />
 
           <S.SocialNetworksGroup>
             <S.FbIcon />

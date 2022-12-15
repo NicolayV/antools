@@ -1,7 +1,6 @@
 import styled from "styled-components";
-import searchIcon from "../../assets/img/search-icon.png";
 
-export const SearchBar = styled.div`
+export const SearchBar = styled.form`
   min-width: 500px;
   display: flex;
   align-items: center;
@@ -9,17 +8,7 @@ export const SearchBar = styled.div`
   gap: 8px;
   background-color: rgba(40, 48, 54, 1);
   border-radius: 15px;
-  padding: 8px;
-  padding-left: 50px;
-  position: relative;
-`;
-
-export const SearchIcon = styled.img.attrs({
-  src: searchIcon,
-  alt: "FbIcon",
-})`
-  position: absolute;
-  left: 18px;
+  padding: 8px 8px 8px 16px;
 `;
 
 export const InputSearch = styled.input`
@@ -28,6 +17,8 @@ export const InputSearch = styled.input`
   outline: none;
   border: none;
   color: rgba(255, 255, 255, 0.9);
+  padding-left: 8px;
+
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 14px;
