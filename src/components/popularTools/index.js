@@ -5,6 +5,7 @@ import logoMicrosoft from "../../assets/img/logos_microsoft.png";
 import logoGoogle from "../../assets/img/logos_google.png";
 import logoSlack from "../../assets/img/logos_slack.png";
 import logoWorldPress from "../../assets/img/logos_wordpress.png";
+import { Button } from "../button";
 
 export const PopularTools = ({ list }) => {
   return (
@@ -24,7 +25,7 @@ export const PopularTools = ({ list }) => {
         ))}
       </S.Container>
 
-      <S.LoadButton>Load More</S.LoadButton>
+      <Button variant="loadButton">Load More</Button>
 
       <S.BrandBoard>
         <S.BrandTitle>Trusted more than 150+ brand</S.BrandTitle>

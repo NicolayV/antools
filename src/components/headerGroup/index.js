@@ -1,3 +1,4 @@
+import { Button } from "../button";
 import { SearchBar } from "../searchBar";
 import { SocialNetworksSection } from "../socialNetworksSection";
 import * as S from "./styled";
@@ -11,17 +12,17 @@ export const Header = () => {
           <p>antools.</p>
         </S.LogoGroup>
         <S.NavGroup>
-          <S.OutlineButton>Home</S.OutlineButton>
+          <Button variant="menuButton">Home</Button>
           <div>
-            <S.OutlineButton>Categories</S.OutlineButton>
+            <Button variant="menuButton">Categories</Button>
             <S.Chevron />
           </div>
-          <S.OutlineButton>My Collections</S.OutlineButton>
-          <S.OutlineButton>Blog</S.OutlineButton>
+          <Button variant="menuButton">My Collections</Button>
+          <Button variant="menuButton">Blog</Button>
         </S.NavGroup>
         <S.LoginGroup>
-          <S.OutlineButton>Login</S.OutlineButton>
-          <S.Button>Sign Up</S.Button>
+          <Button variant="secondaryButton">Login</Button>
+          <Button variant="primaryButton">Sign Up</Button>
         </S.LoginGroup>
       </S.Container>
 

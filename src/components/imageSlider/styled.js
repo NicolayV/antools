@@ -17,32 +17,8 @@ export const ImgBoard = styled.div`
   width: 870px;
   height: 500px;
 `;
-export const Button = styled.button`
-  padding: 50px 55px;
-  background-color: transparent;
-  outline: none;
-  border-width: 0;
-  cursor: pointer;
-  position: relative;
-
-  &:hover {
-    & svg * {
-      stroke: #ff6e30;
-    }
-  }
-
-  & svg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    & * {
-      stroke: var(--grey500);
-    }
-  }
-`;
 export const Carousel = styled.div`
-  padding: 20px;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -51,7 +27,7 @@ export const Carousel = styled.div`
 export const CarouselItem = styled.div`
   width: 44px;
   height: 8px;
-  border-radius: 4px;
+  border-radius: var(--radius4);
   background-color: ${(props) =>
     props.isActive ? "var(--orange)" : "var(--bg100)"};
   cursor: pointer;

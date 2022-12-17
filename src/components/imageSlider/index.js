@@ -3,6 +3,7 @@ import * as S from "./styled";
 
 import { ReactComponent as ChevronRightLogo } from "../../assets/svg/chevron-right.svg";
 import { ReactComponent as ChevronLeftLogo } from "../../assets/svg/chevron-left.svg";
+import { Button } from "../button";
 
 export const ImageSlider = (props) => {
   const { slides } = props;
@@ -22,20 +23,21 @@ export const ImageSlider = (props) => {
   return (
     <S.Wrapper>
       <S.Container>
-        <S.Button onClick={goToPrevious}>
+        <Button variant="sliderButton" onClick={goToPrevious}>
           <ChevronLeftLogo />
-        </S.Button>
+        </Button>
 
         <S.ImgBoard currentImg={slides[currentIndex]}></S.ImgBoard>
 
-        <S.Button onClick={goToNext}>
+        <Button variant="sliderButton" onClick={goToNext}>
           <ChevronRightLogo />
-        </S.Button>
+        </Button>
       </S.Container>
 
       <S.Carousel>
         {slides.map((_, index) => (
           <S.CarouselItem
+            key={index}
             isActive={currentIndex === index ? true : false}
             onClick={() => setCurrentIndex(index)}
           />

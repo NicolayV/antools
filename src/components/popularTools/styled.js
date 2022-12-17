@@ -16,9 +16,8 @@ export const Header = styled.div`
 
 export const Title = styled.span`
   color: var(--white200);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 48px;
+  font-size: var(--fs48);
+  font-weight: var(--fw-medium);
 `;
 
 export const SubTitle = styled(Title)`
@@ -33,29 +32,15 @@ export const Container = styled.div`
   gap: 25px;
 `;
 
-export const LoadButton = styled.button`
-  padding: 17px 38px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  color: var(--orange);
-  border-radius: 4px;
-  border: 1px solid var(--grey700);
-  background-color: transparent;
-  outline: none;
-  cursor: pointer;
-  box-shadow: 0 0 5px black;
-`;
-
 export const BrandBoard = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 75px;
 
-  border-radius: 50px;
+  border-radius: var(--radius50);
   border-width: 0;
-  padding: 55px 82px;
+  padding: 5.5rem 8.2rem;
   background: linear-gradient(var(--grey900), var(--black));
 `;
 

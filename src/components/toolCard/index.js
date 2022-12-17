@@ -1,6 +1,7 @@
 import * as S from "./styled";
 import { ReactComponent as FolderIcon } from "../../assets/svg/icon-folder.svg";
 import { ReactComponent as LikeIcon } from "../../assets/svg/icon-like.svg";
+import { Button } from "../button";
 
 const Card = ({ logo, title, subTitle, content, isLiked }) => (
   <>
@@ -17,12 +18,12 @@ const Card = ({ logo, title, subTitle, content, isLiked }) => (
       <S.IconGroupe>
         <LikeIcon
           fill={isLiked ? "red" : "var(--grey200)"}
-          fill-opacity={isLiked ? "0.78" : "0.38"}
+          fillOpacity={isLiked ? "0.78" : "0.38"}
         />
-        <FolderIcon fill-opacity="0.38" />
+        <FolderIcon fillOpacity="0.38" />
       </S.IconGroupe>
 
-      <S.CardButton>Visit</S.CardButton>
+      <Button variant="cardButton">Visit</Button>
     </S.LinkGroupe>
   </>
 );

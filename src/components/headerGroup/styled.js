@@ -1,4 +1,5 @@
 import styled from "styled-components";
+
 import logoIcon from "../../assets/img/logo.png";
 import chevronIcon from "../../assets/img/chevron-down.png";
 
@@ -16,36 +17,6 @@ export const Container = styled.div`
   padding-top: 2.6rem;
 `;
 
-export const Button = styled.button`
-  border-radius: 8px;
-  border-width: 0;
-  background-color: var(--orange);
-
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  padding: 12px 28px;
-  color: var(--white100);
-  outline: none;
-  cursor: pointer;
-
-  &:hover {
-    filter: brightness(0.9);
-  }
-`;
-
-export const OutlineButton = styled.button`
-  outline: none;
-  border-width: 0;
-  background-color: transparent;
-  color: var(--grey300);
-  cursor: pointer;
-
-  padding: 0 20px;
-`;
-//
-//
-//
 export const LogoGroup = styled.div`
   display: flex;
   align-items: center;
@@ -53,9 +24,8 @@ export const LogoGroup = styled.div`
 
   & p {
     color: var(--white200);
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    font-size: 22px;
+    font-size: var(--fs22);
+    font-weight: var(--fw-semiBold);
   }
 `;
 
@@ -88,11 +58,7 @@ export const Chevron = styled.img.attrs({
   position: absolute;
   right: 2px;
 `;
-//
-//
-//
-//
-//
+
 export const Content = styled.div`
   display: flex;
 `;
@@ -103,10 +69,10 @@ export const Wrap = styled.div`
 
   & > h2 {
     color: var(--white200);
-    font-family: "Work Sans", sans-serif;
-    font-weight: 700;
-    font-size: 34px;
-    padding: 24px 0;
+    font-family: var(--family-work);
+    font-size: var(--fs34);
+    font-weight: var(--fw-bold);
+    padding: 2.4rem 0;
     & span {
       color: var(--orange);
     }
@@ -114,10 +80,9 @@ export const Wrap = styled.div`
 
   & > p {
     color: var(--grey300);
-    font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    font-size: 18px;
-    padding-bottom: 15px;
+    font-size: var(--fs18);
+    font-weight: var(--fw-regular);
+    padding-bottom: 1.5rem;
   }
 `;
 

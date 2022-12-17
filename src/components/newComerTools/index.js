@@ -3,6 +3,7 @@ import { ToolCard } from "../toolCard";
 import { SearchBar } from "../searchBar/";
 import { ImageSlider } from "../imageSlider";
 import { slides } from "../../data";
+import { Button } from "../button";
 
 export const NewcomerTools = ({ list }) => {
   return (
@@ -15,7 +16,7 @@ export const NewcomerTools = ({ list }) => {
             recommended tools from reliable designers <br />
             and developers
           </S.SubTitle>
-          <S.NewcomerButton>Explore more</S.NewcomerButton>
+          <Button variant="mediumButton">Explore more</Button>
         </S.NewcomerBoard>
 
         <S.CardBoard>

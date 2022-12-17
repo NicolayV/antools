@@ -3,8 +3,8 @@ import styled from "styled-components";
 export const ToolCard = styled.div`
   width: 392px;
   height: 294px;
-  border-radius: 50px;
-  padding: 33px;
+  border-radius: var(--radius50);
+  padding: 3.3rem;
 
   display: flex;
   flex-direction: column;
@@ -25,8 +25,8 @@ export const ToolCard = styled.div`
 export const ToolCardMini = styled.div`
   width: 288px;
   height: 284px;
-  border-radius: 50px;
-  padding: 33px;
+  border-radius: var(--radius50);
+  padding: 3.3rem;
 
   display: flex;
   flex-direction: column;
@@ -61,9 +61,8 @@ export const TextGroup = styled.div`
 
 export const Title = styled.span`
   color: var(--grey200);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
+  font-size: var(--fs24);
+  font-weight: var(--fw-medium);
 `;
 
 export const SubTitle = styled(Title)`
@@ -92,25 +91,5 @@ export const IconGroupe = styled.div`
     &:hover {
       fill-opacity: 0.78;
     }
-  }
-`;
-
-export const CardButton = styled.button`
-  padding: 9px 35px;
-  border-radius: 8px;
-  border-width: 0;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-  font-size: 16px;
-  cursor: pointer;
-
-  outline: none;
-  background-color: transparent;
-  color: var(--grey300);
-  transition: 0.3s;
-
-  &:hover {
-    background-color: var(--orange);
-    color: var(--white100);
   }
 `;

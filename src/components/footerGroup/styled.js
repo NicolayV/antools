@@ -3,7 +3,7 @@ import logoIcon from "../../assets/img/logo.png";
 
 export const Container = styled.div`
   width: 100%;
-  padding: 70px;
+  padding: 7rem;
 
   display: flex;
 
@@ -22,7 +22,7 @@ export const Logo = styled.img.attrs({
   src: logoIcon,
   alt: "logo",
 })`
-  padding-bottom: 20px;
+  padding-bottom: 2rem;
 `;
 export const Sections = styled.div`
   width: 260px;
@@ -32,17 +32,16 @@ export const Sections = styled.div`
 `;
 export const Title = styled.span`
   color: var(--white200);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  padding-bottom: 20px;
+  font-weight: var(--fw-medium);
+  font-size: var(--fs20);
+  padding-bottom: 2rem;
 `;
 export const SubTitle = styled(Title)`
   color: var(--grey300);
   font-size: 16px;
   text-align: center;
   cursor: pointer;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
   text-align: left;
 
   &:hover {

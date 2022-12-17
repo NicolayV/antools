@@ -21,9 +21,8 @@ export const NewcomerBoard = styled.div`
 
 export const Title = styled.span`
   color: var(--white200);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 48px;
+  font-size: var(--fs48);
+  font-weight: var(--fw-medium);
   text-align: left;
   margin-bottom: 34px;
 `;
@@ -32,24 +31,6 @@ export const SubTitle = styled(Title)`
   color: var(--grey300);
   font-size: 18px;
   margin-bottom: 56px;
-`;
-export const NewcomerButton = styled.button`
-  padding: 15px 40px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 18px;
-  color: var(--white100);
-  background-color: var(--orange);
-  border-radius: 8px;
-  border-width: 0;
-  cursor: pointer;
-  outline: none;
-  opacity: 1;
-  transition: 0.3s;
-
-  &:hover {
-    opacity: 0.6;
-  }
 `;
 export const CardBoard = styled.div`
   width: 625px;
@@ -74,15 +55,14 @@ export const Header = styled.div`
 
 export const InfoTitle = styled.span`
   color: var(--white200);
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-  font-size: 48px;
-  padding-bottom: 20px;
+  font-size: var(--fs48);
+  font-weight: var(--fw-medium);
+  padding-bottom: 2rem;
 `;
 
 export const InfoSubTitle = styled(InfoTitle)`
   color: var(--grey300);
   font-size: 18px;
   text-align: center;
-  padding-bottom: 10px;
+  padding-bottom: 1rem;
 `;
