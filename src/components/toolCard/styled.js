@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-import likeIcon from "../../assets/img/like-icon.png";
-import likeIconColor from "../../assets/img/like-icon-colored.png";
-import folderIcon from "../../assets/img/folder-icon.png";
-
 export const ToolCard = styled.div`
   width: 392px;
   height: 294px;
@@ -15,7 +11,8 @@ export const ToolCard = styled.div`
   align-items: stretch;
 
   &:hover {
-    background: linear-gradient(
+    background-image: linear-gradient(
+      45deg,
       rgba(40, 48, 54, 0.6),
       rgba(255, 255, 255, 0.08),
       rgba(255, 255, 255, 0),
@@ -90,21 +87,13 @@ export const LinkGroupe = styled.div`
 export const IconGroupe = styled.div`
   display: flex;
   gap: 12px;
+
+  & svg {
+    &:hover {
+      fill-opacity: 0.78;
+    }
+  }
 `;
-export const LikeIcon = styled.img.attrs({
-  src: likeIcon,
-  alt: "likeIcon",
-})``;
-
-export const LikeIconActive = styled.img.attrs({
-  src: likeIconColor,
-  alt: "likeIcon",
-})``;
-
-export const FolderIcon = styled.img.attrs({
-  src: folderIcon,
-  alt: "folderIcon",
-})``;
 
 export const CardButton = styled.button`
   padding: 9px 35px;

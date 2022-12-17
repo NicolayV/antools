@@ -1,10 +1,7 @@
 import styled from "styled-components";
 import logoIcon from "../../assets/img/logo.png";
 import chevronIcon from "../../assets/img/chevron-down.png";
-import searchIcon from "../../assets/img/search-icon.png";
-import fbIcon from "../../assets/img/fb-icon.png";
-import instIcon from "../../assets/img/inst-icon.png";
-import twitIcon from "../../assets/img/twit-icon.png";
+
 import illustration from "../../assets/img/illustration.png";
 
 export const Wrapper = styled.div`
@@ -124,57 +121,6 @@ export const Wrap = styled.div`
   }
 `;
 
-export const SocialNetworksGroup = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  flex-grow: 1;
-  align-items: flex-end;
-`;
-
-export const SearchBar = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 8px;
-  background-color: rgba(40, 48, 54, 1);
-  border-radius: 15px;
-  padding: 8px;
-  padding-left: 50px;
-  position: relative;
-`;
-
-export const SearchIcon = styled.img.attrs({
-  src: searchIcon,
-  alt: "FbIcon",
-})`
-  position: absolute;
-  left: 18px;
-`;
-
-export const InputSearch = styled.input`
-  flex-grow: 1;
-  background-color: transparent;
-  outline: none;
-  border: none;
-  color: rgba(255, 255, 255, 0.9);
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-`;
-
-export const FbIcon = styled.img.attrs({
-  src: fbIcon,
-  alt: "FbIcon",
-})``;
-export const InstIcon = styled.img.attrs({
-  src: instIcon,
-  alt: "InstIcon",
-})``;
-export const TwitIcon = styled.img.attrs({
-  src: twitIcon,
-  alt: "TwitIcon",
-})``;
 export const Illustration = styled.img.attrs({
   src: illustration,
   alt: "illustration",

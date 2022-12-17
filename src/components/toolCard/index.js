@@ -1,4 +1,6 @@
 import * as S from "./styled";
+import { ReactComponent as FolderIcon } from "../../assets/svg/icon-folder.svg";
+import { ReactComponent as LikeIcon } from "../../assets/svg/icon-like.svg";
 
 const Card = ({ logo, title, subTitle, content, isLiked }) => (
   <>
@@ -10,11 +12,16 @@ const Card = ({ logo, title, subTitle, content, isLiked }) => (
       </S.TextGroup>
     </S.Header>
     <S.Content>{content}</S.Content>
+
     <S.LinkGroupe>
       <S.IconGroupe>
-        {isLiked ? <S.LikeIconActive /> : <S.LikeIcon />}
-        <S.FolderIcon />
+        <LikeIcon
+          fill={isLiked ? "red" : "rgba(255, 255, 255, 0.78)"}
+          fill-opacity={isLiked ? "0.78" : "0.38"}
+        />
+        <FolderIcon fill-opacity="0.38" />
       </S.IconGroupe>
+
       <S.CardButton>Visit</S.CardButton>
     </S.LinkGroupe>
   </>

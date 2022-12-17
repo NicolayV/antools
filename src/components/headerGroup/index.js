@@ -1,4 +1,5 @@
 import { SearchBar } from "../searchBar";
+import { SocialNetworksSection } from "../socialNetworksSection";
 import * as S from "./styled";
 
 export const Header = () => {
@@ -37,14 +38,10 @@ export const Header = () => {
           <SearchBar
             placeholder="find more than 430+ tools..."
             buttonText="Search"
-            searchLogo={true}
+            hasLogo={true}
           />
 
-          <S.SocialNetworksGroup>
-            <S.FbIcon />
-            <S.InstIcon />
-            <S.TwitIcon />
-          </S.SocialNetworksGroup>
+          <SocialNetworksSection />
         </S.Wrap>
         <S.Illustration />
       </S.Content>

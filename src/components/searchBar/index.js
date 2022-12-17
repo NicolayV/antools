@@ -6,7 +6,7 @@ import { useState } from "react";
 export const SearchBar = ({
   buttonText = "Ok",
   placeholder = "",
-  searchLogo = false,
+  hasLogo = false,
   ...rest
 }) => {
   const [innerValue, setInnerValue] = useState("");
@@ -17,7 +17,7 @@ export const SearchBar = ({
 
   return (
     <S.SearchBar onSubmit={handleSubmit}>
-      {searchLogo ? <SearchLogo /> : null}
+      {hasLogo ? <SearchLogo /> : null}
       <S.InputSearch
         placeholder={placeholder}
         type="text"
