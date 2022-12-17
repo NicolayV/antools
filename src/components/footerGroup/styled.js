@@ -10,7 +10,7 @@ export const Container = styled.div`
   align-items: flex-start;
   gap: 70px;
 
-  border-top: 0.5px solid rgba(255, 255, 255, 0.15);
+  border-top: 0.5px solid var(--grey600);
 `;
 export const Header = styled.div`
   display: flex;
@@ -31,14 +31,14 @@ export const Sections = styled.div`
   align-items: flex-start;
 `;
 export const Title = styled.span`
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white200);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
   padding-bottom: 20px;
 `;
 export const SubTitle = styled(Title)`
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--grey300);
   font-size: 16px;
   text-align: center;
   cursor: pointer;
@@ -46,6 +46,6 @@ export const SubTitle = styled(Title)`
   text-align: left;
 
   &:hover {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white200);
   }
 `;

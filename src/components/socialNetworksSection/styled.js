@@ -9,9 +9,9 @@ export const Group = styled.div`
   cursor: pointer;
 
   & svg {
-    fill: rgba(255, 255, 255, 0.78);
+    fill: var(--grey200);
     &:hover {
-      fill: rgba(255, 110, 48, 1);
+      fill: var(--orange);
     }
   }
 `;

@@ -19,13 +19,13 @@ export const Container = styled.div`
 export const Button = styled.button`
   border-radius: 8px;
   border-width: 0;
-  background-color: #ff6e30;
+  background-color: var(--orange);
 
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 16px;
   padding: 12px 28px;
-  color: rgba(253, 245, 255, 1);
+  color: var(--white100);
   outline: none;
   cursor: pointer;
 
@@ -38,7 +38,7 @@ export const OutlineButton = styled.button`
   outline: none;
   border-width: 0;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--grey300);
   cursor: pointer;
 
   padding: 0 20px;
@@ -52,7 +52,7 @@ export const LogoGroup = styled.div`
   gap: 12px;
 
   & p {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white200);
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-size: 22px;
@@ -102,18 +102,18 @@ export const Wrap = styled.div`
   gap: 30px;
 
   & > h2 {
-    color: rgba(255, 255, 255, 0.9);
+    color: var(--white200);
     font-family: "Work Sans", sans-serif;
     font-weight: 700;
     font-size: 34px;
     padding: 24px 0;
     & span {
-      color: rgba(255, 110, 48, 1);
+      color: var(--orange);
     }
   }
 
   & > p {
-    color: rgba(255, 255, 255, 0.55);
+    color: var(--grey300);
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 18px;

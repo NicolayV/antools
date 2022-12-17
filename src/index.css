@@ -10,9 +10,49 @@ html {
 
 :root {
   --family-poppins: "Poppins", sans-serif;
+
+  /* color */
+  --orange: rgba(255, 110, 48, 1);
+  --brown100: rgba(255, 165, 55, 0.55);
+  --white100: rgba(255, 255, 255, 1);
+  --white200: rgba(255, 255, 255, 0.9);
+  --grey100: rgba(255, 255, 255, 0.8);
+  --grey200: rgba(255, 255, 255, 0.78);
+  --grey300: rgba(255, 255, 255, 0.55);
+  --grey400: rgba(255, 255, 255, 0.38);
+  --grey500: rgba(255, 255, 255, 0.28);
+  --grey600: rgba(255, 255, 255, 0.15);
+  --grey700: rgba(255, 255, 255, 0.1);
+  --grey800: rgba(255, 255, 255, 0.08);
+  --grey900: rgba(255, 255, 255, 0.05);
+  --black: rgba(255, 255, 255, 0);
+  --bg100: rgba(40, 48, 54, 1);
+  --bg200: rgba(30, 37, 43, 1);
 }
 
 body {
   margin: 0;
   font-family: var(--family-poppins);
 }
+
+/* 
+Search button - rgba(255, 255, 255, 1)
+Logo name - rgba(255, 255, 255, 0.9)
+Main title - rgba(255, 255, 255, 0.9)
+Title 2 - rgba(255, 255, 255, 0.9)
+Brand title - rgba(255, 255, 255, 0.8)
+Login button text - rgba(255, 255, 255, 0.78)
+Network icon - rgba(255, 255, 255, 0.78)
+Menu text - background: rgba(255, 255, 255, 0.55);
+Sub title - rgba(255, 255, 255, 0.55)
+Sub title 2 - rgba(255, 255, 255, 0.55)
+Search placeholder - rgba(255, 255, 255, 0.38)
+
+orange
+rgba(255, 110, 48, 1)
+
+
+
+
+
+ */

@@ -15,14 +15,14 @@ export const Header = styled.div`
 `;
 
 export const Title = styled.span`
-  color: rgba(255, 255, 255, 0.9);
+  color: var(--white200);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 48px;
 `;
 
 export const SubTitle = styled(Title)`
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--grey300);
   font-size: 18px;
   text-align: center;
 `;
@@ -38,9 +38,9 @@ export const LoadButton = styled.button`
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 20px;
-  color: rgba(255, 110, 48, 1);
+  color: var(--orange);
   border-radius: 4px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 1px solid var(--grey700);
   background-color: transparent;
   outline: none;
   cursor: pointer;
@@ -56,14 +56,11 @@ export const BrandBoard = styled.div`
   border-radius: 50px;
   border-width: 0;
   padding: 55px 82px;
-  background: linear-gradient(
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(var(--grey900), var(--black));
 `;
 
 export const BrandTitle = styled(Title)`
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--grey100);
   font-size: 24px;
 `;
 

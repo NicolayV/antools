@@ -16,7 +16,7 @@ const Card = ({ logo, title, subTitle, content, isLiked }) => (
     <S.LinkGroupe>
       <S.IconGroupe>
         <LikeIcon
-          fill={isLiked ? "red" : "rgba(255, 255, 255, 0.78)"}
+          fill={isLiked ? "red" : "var(--grey200)"}
           fill-opacity={isLiked ? "0.78" : "0.38"}
         />
         <FolderIcon fill-opacity="0.38" />

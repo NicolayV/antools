@@ -37,7 +37,7 @@ export const Button = styled.button`
     left: 50%;
     transform: translate(-50%, -50%);
     & * {
-      stroke: rgba(255, 255, 255, 0.28);
+      stroke: var(--grey500);
     }
   }
 `;
@@ -53,11 +53,10 @@ export const CarouselItem = styled.div`
   height: 8px;
   border-radius: 4px;
   background-color: ${(props) =>
-    props.isActive ? "rgba(255, 110, 48, 1)" : "rgba(40, 48, 54, 1)"};
+    props.isActive ? "var(--orange)" : "var(--bg100)"};
   cursor: pointer;
   &:hover {
     box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-      rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+      rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, var(--grey800) 0px 1px 0px inset;
   }
 `;

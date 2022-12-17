@@ -14,10 +14,10 @@ export const ToolCard = styled.div`
     background-image: linear-gradient(
       45deg,
       rgba(40, 48, 54, 0.6),
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0)
+      var(--grey800),
+      var(--black),
+      var(--grey900),
+      var(--black)
     );
   }
 `;
@@ -35,10 +35,10 @@ export const ToolCardMini = styled.div`
   &:hover {
     background: linear-gradient(
       rgba(40, 48, 54, 0.6),
-      rgba(255, 255, 255, 0.08),
-      rgba(255, 255, 255, 0),
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0)
+      var(--grey800),
+      var(--black),
+      var(--grey900),
+      var(--black)
     );
   }
 `;
@@ -60,20 +60,20 @@ export const TextGroup = styled.div`
 `;
 
 export const Title = styled.span`
-  color: rgba(255, 255, 255, 0.78);
+  color: var(--grey200);
   font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 24px;
 `;
 
 export const SubTitle = styled(Title)`
-  color: rgba(255, 165, 55, 0.55);
+  color: var(--brown100);
   font-weight: 400;
   font-size: 18px;
 `;
 
 export const Content = styled(SubTitle)`
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--grey300);
   font-size: 16px;
   flex-grow: 1;
   margin: 20px 0;
@@ -106,11 +106,11 @@ export const CardButton = styled.button`
 
   outline: none;
   background-color: transparent;
-  color: rgba(255, 255, 255, 0.55);
+  color: var(--grey300);
   transition: 0.3s;
 
   &:hover {
-    background-color: rgba(255, 110, 48, 1);
-    color: rgba(255, 255, 255, 1);
+    background-color: var(--orange);
+    color: var(--white100);
   }
 `;
