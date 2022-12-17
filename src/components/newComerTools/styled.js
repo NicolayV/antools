@@ -29,7 +29,7 @@ export const Title = styled.span`
 
 export const SubTitle = styled(Title)`
   color: var(--grey300);
-  font-size: 18px;
+  font-size: var(--fs18);
   margin-bottom: 56px;
 `;
 export const CardBoard = styled.div`
@@ -62,7 +62,7 @@ export const InfoTitle = styled.span`
 
 export const InfoSubTitle = styled(InfoTitle)`
   color: var(--grey300);
-  font-size: 18px;
+  font-size: var(--fs18);
   text-align: center;
   padding-bottom: 1rem;
 `;

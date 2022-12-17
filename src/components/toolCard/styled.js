@@ -68,12 +68,12 @@ export const Title = styled.span`
 export const SubTitle = styled(Title)`
   color: var(--brown100);
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--fs18);
 `;
 
 export const Content = styled(SubTitle)`
   color: var(--grey300);
-  font-size: 16px;
+  font-size: var(--fs16);
   flex-grow: 1;
   margin: 20px 0;
 `;

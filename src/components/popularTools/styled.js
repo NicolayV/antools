@@ -22,7 +22,7 @@ export const Title = styled.span`
 
 export const SubTitle = styled(Title)`
   color: var(--grey300);
-  font-size: 18px;
+  font-size: var(--fs18);
   text-align: center;
 `;
 
@@ -46,7 +46,7 @@ export const BrandBoard = styled.div`
 
 export const BrandTitle = styled(Title)`
   color: var(--grey100);
-  font-size: 24px;
+  font-size: var(--fs24);
 `;
 
 export const BrandGroupe = styled.div`
