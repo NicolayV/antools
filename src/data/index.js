@@ -11,8 +11,8 @@ import toolboxIcon from "../assets/img/logos_toolbox.png";
 import procreateIcon from "../assets/img/logos_procreate.png";
 
 import img1 from "../assets/img/ronald-icon.png";
-import img2 from "../assets/img/ronald-icon.png";
-import img3 from "../assets/img/ronald-icon.png";
+import img2 from "../assets/img/3d-fluency.png";
+import img3 from "../assets/img/stickers.png";
 
 export const popularToolsCard = [
   {

@@ -16,6 +16,7 @@ export const ImgBoard = styled.div`
   background-size: 100%;
   width: 870px;
   height: 500px;
+  transition: 0.5s;
 `;
 export const Carousel = styled.div`
   padding: 2rem;

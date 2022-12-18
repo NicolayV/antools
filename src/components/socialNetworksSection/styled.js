@@ -10,6 +10,8 @@ export const Group = styled.div`
 
   & svg {
     fill: var(--grey200);
+    transition: 0.3s;
+
     &:hover {
       fill: var(--orange);
     }
